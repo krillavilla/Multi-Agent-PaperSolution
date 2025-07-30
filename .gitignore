@@ -1,0 +1,7 @@
+venv-paper-solution/
+.env
+__pycache__/
+*.pyc
+.idea/
+*.db
+.DS_Store

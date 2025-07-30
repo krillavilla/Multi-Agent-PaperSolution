@@ -1,0 +1,21 @@
+request_id,request_date,cash_balance,inventory_value,response
+1,2025-04-01,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 200 units of Glossy paper for a total of $40.00.
+2,2025-04-03,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 25 units of A4 paper for a total of $1.25.
+3,2025-04-04,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 500 units of A4 paper for a total of $25.00.
+4,2025-04-05,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+5,2025-04-05,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+6,2025-04-06,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+7,2025-04-07,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 200 units of Glossy paper for a total of $40.00.
+8,2025-04-07,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 200 units of Glossy paper for a total of $40.00.
+9,2025-04-07,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 200 units of Glossy paper for a total of $40.00.
+13,2025-04-08,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+12,2025-04-08,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+10,2025-04-08,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+11,2025-04-08,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 200 units of Glossy paper for a total of $40.00.
+14,2025-04-09,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+15,2025-04-12,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Colored paper for a total of $10.00.
+16,2025-04-13,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 500 units of A4 paper for a total of $25.00.
+17,2025-04-14,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Colored paper for a total of $10.00.
+18,2025-04-14,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 100 units of Cardstock for a total of $15.00.
+19,2025-04-15,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 200 units of Glossy paper for a total of $40.00.
+20,2025-04-17,45059.7,4940.299999999999,Order confirmed! We've successfully processed your order for 25 units of A4 paper for a total of $1.25.
