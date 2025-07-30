@@ -17,11 +17,11 @@ Implemented using **Python 3.8+** and the **smolagents** framework.
 
 ## 🧠 Agent Design Overview
 
-- **Orchestrator Agent**: Delegates subtasks to worker agents based on customer quote requests.
-- **Inventory Agent**: Checks current stock and delivery timelines using `get_stock_level`, `get_all_inventory`, `get_supplier_delivery_date`.
-- **Quoting Agent**: Generates competitive quotes using `search_quote_history`, `get_cash_balance`.
-- **Sales Agent**: Finalizes sales transactions using `create_transaction`.
-- **Reporting Agent (Optional)**: Uses `generate_financial_report` for evaluations.
+- **Orchestrator System**: Main orchestration function that processes customer requests and coordinates agent actions.
+- **Inventory Agent**: Checks current stock levels, estimates delivery timelines, and manages inventory data.
+- **Quoting Agent**: Generates competitive quotes based on historical data and applies bulk discount logic.
+- **Sales Processing**: Handles transaction processing and inventory updates using integrated tool functions.
+- **Reporting Agent**: Generates comprehensive financial reports including cash balance and top-selling products.
 
 ---
 
@@ -30,15 +30,14 @@ Implemented using **Python 3.8+** and the **smolagents** framework.
 ```
 Multi-Agent-PaperSolution/
 ├── beaver_agent_workflow.pdf          # Diagram showing agent architecture
-├── multi_agent_solution.py            # Main Python implementation
-├── project_starter.py                 # Provided helper functions and database
+├── project_starter.py                 # Main implementation with multi-agent system
 ├── quote_requests.csv                 # Full set of quote requests
 ├── quote_requests_sample.csv          # Sample requests for testing
 ├── quotes.csv                         # Historical quote data
 ├── test_results.csv                   # Generated output after evaluation
-├── .env                               # Stores your Vocareum OpenAI API key
-├── .gitignore                         # Git exclusions
+├── reflection.md                      # Implementation details and evaluation summary
 ├── requirements.txt                   # Python dependencies
+├── .gitignore                         # Git exclusions
 └── README.md                          # Project overview and instructions
 ```
 
@@ -57,12 +56,13 @@ source venv-paper-solution/bin/activate
 
 ### 2. Install Dependencies
 
-**Required:** The project requires the `smolagents` framework for multi-agent orchestration.
+Install all required packages from the requirements file:
 
 ```bash
 pip install -r requirements.txt
-pip install smolagents
 ```
+
+This includes: pandas, openai, SQLAlchemy, python-dotenv, and smolagents.
 
 ### 3. Add OpenAI API Key
 
@@ -84,23 +84,33 @@ python project_starter.py
 
 ## ▶️ How to Run the Project
 
-Once setup is complete, you have two options:
+Once setup is complete, run the main implementation:
 
-### Quick Start (Recommended)
 ```bash
 python project_starter.py
 ```
 
-### Full Implementation
-```bash
-source venv-paper-solution/bin/activate
-python multi_agent_solution.py
-```
+This will:
+- Initialize the SQLite database with sample data
+- Load `quote_requests_sample.csv` for processing
+- Process requests through the multi-agent system
+- Generate and save results to `test_results.csv`
+- Display a comprehensive financial report
 
-Both approaches will:
-- Load `quote_requests_sample.csv`
-- Route requests through your agent system
-- Log results to `test_results.csv`
+---
+
+## 📈 Project Results
+
+Based on the evaluation documented in `reflection.md`:
+
+- **Total Orders Processed**: 19
+- **Total Revenue Generated**: $392.50
+- **Final Cash Balance**: $45,059.70
+
+### Top Selling Items
+- **Cardstock**: 8 orders, 800 total units
+- **Glossy paper**: 5 orders, 1000 total units
+- **A4 paper**: 4 orders, 1050 total units
 
 ---
 
@@ -108,9 +118,10 @@ Both approaches will:
 
 Ensure your submission includes:
 
-- `multi_agent_solution.py` (fully working implementation)
+- `project_starter.py` (fully working multi-agent implementation)
 - `beaver_agent_workflow.pdf` (workflow diagram)
 - `test_results.csv` (evaluation results)
+- `reflection.md` (implementation details and evaluation summary)
 - `README.md` (this file)
 
 ---
